@@ -1,0 +1,32 @@
+# Cargo.toml
+
+[package]
+name = "voskhod"
+version = "0.1.0"
+authors = ["Alexey Zabelin <hello@alexeyzabelin.com>"]
+
+# This creates an executable we can target with `cargo run` and `cargo build`
+# For this project, we'll have two `[[bin]]` sections later on
+# More information is available at https://doc.rust-lang.org/cargo/reference/manifest.html#configuring-a-target
+[[bin]]
+name = "voskhod"
+path = "src/bin/main.rs"
+
+# This defines a name of the library that will be generated
+[lib]
+name = "voskhod_lib"
+path = "src/lib.rs"
+
+# The dependencies added with `cargo add` and edited to add the `features` stanza
+[dependencies]
+rocket = "0.3.16"
+rocket_codegen = "0.3.16"
+rocket_contrib = { version = "0.3.16", default-features = false, features = ["tera_templates"] }
+serde = "1.0.76"
+serde_derive = "1.0.76"
+serde_json = "1.0.26"
+tera = "0.11.14"
+diesel = { version = "1.3.2", features = ["postgres", "chrono"] }
+r2d2 = "0.8.2"
+r2d2-diesel = "1.0.0"
+dotenv = "0.13.0"
