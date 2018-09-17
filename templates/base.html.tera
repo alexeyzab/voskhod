@@ -5,8 +5,10 @@
     </head>
     <body>
         <div class="container">
-          <p>Check out this tera Context:</p>
-          <p>{{ my_message }}</p>
+          <h1>Users and referral codes!</h1>
+          {% for user in users %}
+            <p>{{ user.email }} - {{ user.referral_code }}</p>
+          {% endfor %}
         </div>
     </body>
 </html>

@@ -5,19 +5,23 @@ name = "voskhod"
 version = "0.1.0"
 authors = ["Alexey Zabelin <hello@alexeyzabelin.com>"]
 
-# This creates an executable we can target with `cargo run` and `cargo build`
-# For this project, we'll have two `[[bin]]` sections later on
+# This creates an executable that can be targeted with `cargo run` and `cargo build`
+# For this project, there will be two `[[bin]]` sections later on.
 # More information is available at https://doc.rust-lang.org/cargo/reference/manifest.html#configuring-a-target
 [[bin]]
 name = "voskhod"
 path = "src/bin/main.rs"
 
-# This defines a name of the library that will be generated
+[[bin]]
+name = "seed"
+path = "src/bin/seed.rs"
+
+# Name of the library that will be generated.
 [lib]
 name = "voskhod_lib"
 path = "src/lib.rs"
 
-# The dependencies added with `cargo add` and edited to add the `features` stanza
+# Dependencies added with `cargo add` and edited to enable additional features.
 [dependencies]
 rocket = "0.3.16"
 rocket_codegen = "0.3.16"
@@ -30,3 +34,6 @@ diesel = { version = "1.3.2", features = ["postgres", "chrono"] }
 r2d2 = "0.8.2"
 r2d2-diesel = "1.0.0"
 dotenv = "0.13.0"
+chrono = { version = "0.4.6", features = ["serde"] }
+fake = "1.2.2"
+rand = "0.5.5"
