@@ -2,6 +2,7 @@
 
 ![Voskhod rocket](https://render.fineartamerica.com/images/rendered/default/print/5.500/8.000/break/images-medium-5/voskhod-2-rocket-on-launchpad-science-photo-library.jpg)
 
+This is a basis for a [prelaunchr-like](https://github.com/harrystech/prelaunchr) web app.
 
 This project is accompanied by a condensed walkthrough I wrote [on my blog](https://alexeyzabelin.com/voskhod-rocket/),
 which is in turn based on the following series of posts:
