@@ -2,7 +2,6 @@
 
 ![Voskhod rocket](https://render.fineartamerica.com/images/rendered/default/print/5.500/8.000/break/images-medium-5/voskhod-2-rocket-on-launchpad-science-photo-library.jpg)
 
-=================
 
 This project is accompanied by a condensed walkthrough I wrote [on my blog](https://alexeyzabelin.com/voskhod-rocket/),
 which is in turn based on the following series of posts:
@@ -11,8 +10,6 @@ which is in turn based on the following series of posts:
 
 [Making a simple blog with Rust - Part II](https://notryanb.github.io/rust-blog-series-2.html)
 
-
-================
 
 # Running locally
 
